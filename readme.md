@@ -1,7 +1,18 @@
-# Fixing things in git
-asdasd
-## Step 1 Identify how far you got!
+# Git tutorial
+
+## Git workflow
 ![git](/git.png)
+
+## Basics
+
+### You want to start a fresh repository
+Navigate to a new empty directory. Run the following command:
+`git init`
+This directory will now be a git repository.
+
+### You have an existing repository
+Navigate to a directory where you would like to download. Run the following command:
+`git clone <repository>`
 
 ### You accidentally added files to staging
 `git reset <filename>`  
