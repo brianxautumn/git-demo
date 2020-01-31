@@ -32,7 +32,7 @@ While in your git directory check which lines have been changed with
 To add files to staging use the add command: `git add <filename>` or `git add <directory>`
 
 ### Create a commit
-At this point, files are not yet saved to a snapshot. Run the commit command. `git commit -m "Message for your commit"
+At this point, files are not yet saved to a snapshot. Run the commit command. `git commit -m "Message for your commit"`
 
 ### Push to remote
 After commiting, files will only be available locally. To upload to remote repository use push. `git push`
@@ -62,6 +62,8 @@ Before pushed, its possible to reset to older versions of the branch. Making new
 This will allow you to apply the opposite commit to undo something. If already pushed, this is a very good approach.
 
 ### Reset all files 
-`git checkout -- . (or directory)`  
-`git checkout HEAD -- . (or directory)`  
+`git checkout -- . <file name or directory>`  
+`git checkout HEAD -- . <file name or directory>`  
 This will allow you to checkout what an entire directory looked like at the given snapshot or hash. This is useful for going back to a specific commit and making it a new one. This is a good approach if the files have already been pushed.
+To load the state of a previous commit it would look like this:
+`git checkout <hash> -- <file name or directory>`
