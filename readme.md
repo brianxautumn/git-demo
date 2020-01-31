@@ -10,6 +10,16 @@ Navigate to a new empty directory. Run the following command:
 `git init`
 This directory will now be a git repository.
 
+## Working on changes
+### See which files have been changed
+While in your git directory check which files have been changed with 
+`git status`
+
+### See which lines have been changed
+While in your git directory check which lines have been changed with 
+`git diff` or if you want to only see a specific file, `git diff <filename>`
+
+
 ### You have an existing repository
 Navigate to a directory where you would like to download. Run the following command:
 `git clone <repository>`
