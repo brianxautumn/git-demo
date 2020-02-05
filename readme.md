@@ -37,6 +37,9 @@ At this point, files are not yet saved to a snapshot. Run the commit command. `g
 ### Push to remote
 After commiting, files will only be available locally. To upload to remote repository use push. `git push`
 
+### Pull from remote
+Anytime someone else pushes to the remote, you must download those changes. `git pull` will download and combine the changes into your directory. This is per branch, so you will need to be on the same branch.
+
 # Branching
 ### Creating a new branch
 To create a new branch `git checkout -b <branchname>`
