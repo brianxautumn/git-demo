@@ -37,6 +37,22 @@ At this point, files are not yet saved to a snapshot. Run the commit command. `g
 ### Push to remote
 After commiting, files will only be available locally. To upload to remote repository use push. `git push`
 
+# Branching
+### Creating a new branch
+To create a new branch `git checkout -b <branchname>`
+
+### View your branches
+To view all your branches `git branch`
+
+To view the current branch you are on `git symbolic-ref HEAD`
+
+### Merging branches
+`git merge <branchname>` Will combine your current branch with the target branch you are merging.
+
+You can also pull and combine all together like this: `git pull origin master` 
+
+Always merge or pull master into the feature branch before opening a pr.
+
 # Basic reverting
 ### You accidentally added files to staging
 `git reset <filename>`  
