@@ -58,7 +58,7 @@ Always merge or pull master into the feature branch before opening a pr.
 
 # Basic reverting
 ### You accidentally added files to staging
-`git reset <filename>`  
+`git reset`  
 This will not undo your changes, it just removes them from staging area
 
 ### You want to get rid of your changes
