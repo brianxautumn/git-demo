@@ -57,9 +57,9 @@ To view the current branch you are on `git symbolic-ref HEAD`
 ### Merging branches
 `git merge <branchname>` Will combine your current branch with the target branch you are merging.
 
-You can also pull and combine all together like this: `git pull origin master` 
+You can also pull and combine all together like this: `git pull origin main` 
 
-Always merge or pull master into the feature branch before opening a pr.
+Always merge or pull main into the feature branch before opening a pr.
 
 # Basic reverting
 ### You accidentally added files to staging
