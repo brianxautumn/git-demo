@@ -44,6 +44,11 @@ Anytime someone else pushes to the remote, you must download those changes. `git
 ### Creating a new branch
 To create a new branch `git checkout -b <branchname>`
 
+After pushing you may have to follow the prompt to set upstream, if not already set.
+
+### Switch branches
+To create a new branch `git checkout <branchname>`
+
 ### View your branches
 To view all your branches `git branch`
 
