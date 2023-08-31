@@ -80,6 +80,12 @@ This allows you to reset specific files back to the `HEAD` which is essentially 
 ### Reseting to older commit
 `git reset --hard HEAD~1`  
 Before pushed, its possible to reset to older versions of the branch. Making new commits can cause conflicts though.
+works with any number of commits
+`git reset --hard HEAD~n`  
+
+### Editing old commit
+`git reset --soft HEAD~1`  
+Before pushed, you can un-commit a change then continue editing, re-commit. If commits are already pushed, this will require a force push.
 
 ### Revert a commit
 `git revert <commit id>` 
@@ -91,3 +97,9 @@ This will allow you to apply the opposite commit to undo something. If already p
 This will allow you to checkout what an entire directory looked like at the given snapshot or hash. This is useful for going back to a specific commit and making it a new one. This is a good approach if the files have already been pushed.
 To load the state of a previous commit it would look like this:
 `git checkout <hash> -- <file name or directory>`
+
+# Rewriting History
+### Overwrite past commits
+In the case of comits already being pushed, if something in the past is modified, you will need to force push. This can be dangerous especially in shared repos.
+`git push -f`
+
