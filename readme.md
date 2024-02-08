@@ -92,8 +92,8 @@ Before pushed, you can un-commit a change then continue editing, re-commit. If c
 This will allow you to apply the opposite commit to undo something. If already pushed, this is a very good approach.
 
 ### Reset all files 
-`git checkout -- . <file name or directory>`  
-`git checkout HEAD -- . <file name or directory>`  
+`git checkout -- <file name or directory>`  
+`git checkout HEAD -- <file name or directory>`  
 This will allow you to checkout what an entire directory looked like at the given snapshot or hash. This is useful for going back to a specific commit and making it a new one. This is a good approach if the files have already been pushed.
 To load the state of a previous commit it would look like this:
 `git checkout <hash> -- <file name or directory>`
