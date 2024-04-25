@@ -103,3 +103,13 @@ To load the state of a previous commit it would look like this:
 In the case of comits already being pushed, if something in the past is modified, you will need to force push. This can be dangerous especially in shared repos.
 `git push -f`
 
+# Fixing conflicts
+`git pull --rebase` 
+Fix conflicts manually.
+Create new commit that fixes the conflict.
+`git rebase --continue`
+
+
+
+
+
