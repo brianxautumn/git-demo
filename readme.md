@@ -79,17 +79,16 @@ This allows you to reset specific files back to the `HEAD` which is essentially 
 
 ### Reseting to older commit
 `git reset --hard HEAD~1`  
-Before pushed, its possible to reset to older versions of the branch. Making new commits can cause conflicts though.
-works with any number of commits
+Before pushed, its possible to reset to delete commits. Works with any number of commits. Will DELETE + REMOVE changes. After pushing, this will require a force push. Warning: will delete past history
 `git reset --hard HEAD~n`  
 
 ### Editing old commit
 `git reset --soft HEAD~1`  
-Before pushed, you can un-commit a change then continue editing, re-commit. If commits are already pushed, this will require a force push.
+Before pushed, you can un-commit a change then continue editing, re-commit. Will DELETE + KEEP changes. If commits are already pushed, this will require a force push.
 
 ### Revert a commit
 `git revert <commit id>` 
-This will allow you to apply the opposite commit to undo something. If already pushed, this is a very good approach.
+This will allow you to apply the opposite commit to undo something. If already pushed, this is a very good approach. This applies the inverse of a previous commit.
 
 ### Reset all files 
 `git checkout -- <file name or directory>`  
